@@ -6,7 +6,7 @@
     --secondary-text-size: 18px;
     --logo-text-size: 24px;
     --button-color: #3882f6;
-    --information-text-size: 36px;
+    --information-text-size: 24px;
     --extra-bold:500;
     --italic:100;
 }
@@ -30,7 +30,7 @@ a{
 
 .header__section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -39,12 +39,79 @@ a{
 }
 
 .header_link{
-    margin-right: 15%;
     font-size: var(--secondary-text-size);
+    margin: 2rem;
+}
+
+.header_items{
+    margin: 2rem;
 }
 
 .logo{
     font-weight: 700;
     font-style: normal;
     font-size: var(--logo-text-size);
+    margin: 2rem;
+}
+
+.home__section{
+    background-color: var(--dark-color);
+    display: flex;
+}
+
+.home_title{
+    color: var(--light-color);
+    font-size: var(--main-text-size);
+    font-weight: 1000;
+    margin: 1rem 0;
+}
+
+.home_subtitle{
+    color: var(--alt-color);
+    font-size: var(--secondary-text-size);
+    margin: 0.5rem 0;
+}
+
+.home_img{
+    width: 500px;
+    margin: 100px 100px 100px;
+}
+
+.home__description{
+    margin: 220px;
+}
+
+.sign__button{
+
+    background-color: var(--button-color);
+    color: var(--light-color);
+    border: 1px solid var(--button-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.information_title{
+    text-align: center;
+    margin: 3rem;
+    font-size: var(--information-text-size);
+    font-weight: 800;
+}
+
+.information_cards{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin: 150px 0;
+}
+.information_card{
+    width: 152px;
+    text-align: center;
+}
+
+.square{
+    border: 3px solid var(--button-color);
+    width: 150px;
+    height: 175px;
+    border-radius: 10px;
 }
